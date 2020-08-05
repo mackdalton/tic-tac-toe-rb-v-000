@@ -48,4 +48,10 @@ def turn(board, input)
   puts "Please make a move 1-9"
   input = gets.strip
   input_to_index
+  if valid_move?
+    move
+  else
+    "Please try again"
+  end
+    display_board
 end
