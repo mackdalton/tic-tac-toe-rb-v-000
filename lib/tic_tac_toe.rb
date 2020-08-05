@@ -25,3 +25,7 @@ end
 def move(board, index, character)
   return board[input] = character
 end
+
+def postion_taken(board)
+  
+end
