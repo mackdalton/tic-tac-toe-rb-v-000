@@ -99,3 +99,11 @@ def draw?(board)
     false
   end
 end
+
+def over?(board)
+  if draw?(board) == true || won?(board) == true
+    true
+  else
+    "Keep playing!"
+  end
+end
