@@ -104,6 +104,6 @@ def over?(board)
   if draw?(board) == true || won?(board) == true
     true
   else
-    "Keep playing!"
+    false
   end
 end
