@@ -44,6 +44,21 @@ def valid_move?(board, index)
   end
 end
 
+
+def turn(board) 
+  puts "Please make a move 1-9"
+  input = gets.strip
+  index = input_to_index(input)
+  if valid_move?(board, index) == true
+    move(board, index, character)
+    character = current_player
+  else
+    "Please try again"
+    input = gets.strip
+  end
+    display_board(board)
+end
+
 def turn_count(board)
   count = 0 
   board.each do |moves|
@@ -60,19 +75,5 @@ def current_player(board)
   else
     "O"
   end
-end
-
-def turn(board) 
-  puts "Please make a move 1-9"
-  input = gets.strip
-  index = input_to_index(input)
-  if valid_move?(board, index) == true
-    move(board, index, character)
-    character = current_player
-  else
-    "Please try again"
-    input = gets.strip
-  end
-    display_board(board)
 end
 
