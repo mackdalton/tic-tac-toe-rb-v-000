@@ -121,7 +121,7 @@ end
 
 if won?(board)
   "Congrats player #{board[token]}!"
-elseif draw?
+elseif draw?(board)
   "It's a tie!"
 end
 end
