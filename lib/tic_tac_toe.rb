@@ -44,7 +44,7 @@ def valid_move?(board, index)
   end
 end
 
-def turn(board, index) 
+def turn(board, input) 
   puts "Please make a move 1-9"
   input = gets.strip
   input_to_index(input)
