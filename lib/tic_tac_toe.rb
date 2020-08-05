@@ -53,5 +53,5 @@ def turn(board, index)
   else
     "Please try again"
   end
-    display_board
+    display_board(board)
 end
