@@ -105,3 +105,7 @@ def over?(board)
     true
   end
 end
+
+def winner?(board)
+
+end
