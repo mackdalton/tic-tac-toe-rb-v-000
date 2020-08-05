@@ -101,9 +101,5 @@ def draw?(board)
 end
 
 def over?(board)
-  if won?(board) == true
-    true
-  else
-    false
-  end
+  if won?(board) || draw?(board) 
 end
