@@ -121,7 +121,7 @@ end
 
 if won?(board)
   "Congrats!"
-elseif draw?(board)
+elsif draw?(board)
   "It's a tie!"
 end
 end
