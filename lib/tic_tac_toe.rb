@@ -44,6 +44,6 @@ def valid_move?(board, index)
   end
 end
 
-def turn 
+def turn(board, input) 
   puts "Please make a move 1-9"
 end
