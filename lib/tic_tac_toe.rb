@@ -38,6 +38,6 @@ end
 
 def valid_move?(board, index)
   if postion_taken? == false && index.between[0,8]
-  end
+  
   end
 end
