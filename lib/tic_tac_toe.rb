@@ -49,7 +49,7 @@ def turn(board, input)
   input = gets.strip
   input_to_index
   if valid_move?(board, index)
-    move
+    move(board, index, character)
   else
     "Please try again"
   end
