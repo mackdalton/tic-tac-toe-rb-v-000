@@ -119,7 +119,7 @@ def play
   turn(board)
 end
 
-if won?(board)
+if won?
   "Congrats player #{board[token]}!"
 elseif draw?(board)
   "It's a tie!"
