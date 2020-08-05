@@ -106,6 +106,10 @@ def over?(board)
   end
 end
 
-def winner?(board)
-
+def winner(board)
+ if won?(board)
+    won?(board).each do |token|
+      return board[token]
+    end
+  end
 end
