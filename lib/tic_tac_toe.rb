@@ -44,6 +44,18 @@ def valid_move?(board, index)
   end
 end
 
+def turn_count(board)
+  return turn(board).count
+end
+
+def current_player(board)
+  if turn_count(board).is_even?
+    return "X"
+  else
+    "O"
+  end
+end
+
 def turn(board) 
   puts "Please make a move 1-9"
   input = gets.strip
@@ -58,14 +70,3 @@ def turn(board)
     display_board(board)
 end
 
-def turn_count(board)
-  return turn(board).count
-end
-
-def current_player(board)
-  if turn_count(board).is_even?
-    return "X"
-  else
-    "O"
-  end
-end
