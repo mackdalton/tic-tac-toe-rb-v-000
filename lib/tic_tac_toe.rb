@@ -27,5 +27,11 @@ def move(board, index, character)
 end
 
 def postion_taken(board, index)
-  
+  if board[index] == " " || board[index] == ""
+   false
+   elsif board[index] == "X" || board[index] == "O"
+   true
+ else
+   false
+  end
 end
