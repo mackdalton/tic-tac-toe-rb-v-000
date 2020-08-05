@@ -113,3 +113,15 @@ def winner(board)
     end
   end
 end
+
+def play 
+  until over?(board) == true
+  turn(board)
+end
+
+if won?(board)
+  "Congrats player #{board[token]}!"
+elseif draw?(board)
+  "It's a tie!"
+end
+end
