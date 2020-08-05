@@ -58,6 +58,9 @@ def turn(board)
     display_board(board)
 end
 
+def turn_count(board)
+end
+
 def current_player(board)
   
 end
