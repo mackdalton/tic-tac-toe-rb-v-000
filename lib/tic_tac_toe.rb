@@ -86,8 +86,7 @@ def won?(board)
   end
     return false
  end
-end
-end
+
 
 def full?(board)
   if board.none? {|moves| moves == ""}
