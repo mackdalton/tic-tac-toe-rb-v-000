@@ -46,4 +46,5 @@ end
 
 def turn(board, input) 
   puts "Please make a move 1-9"
+  input = gets.strip
 end
